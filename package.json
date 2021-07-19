@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stsier/jDrupal.git"
+    "url": "git+https://github.com/stsier/jDrupal.git"
   },
   "keywords": [
     "drupal"
   ],
   "author": "Sergei Tsier",
-  "license": "GNU",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
     "url": "https://github.com/stsier/jDrupal/issues"
   },
@@ -29,6 +29,8 @@
     "jdrupal": "jdrupal.js"
   },
   "directories": {
+    "doc": "docs",
     "test": "tests"
-  }
+  },
+  "dependencies": {}
 }

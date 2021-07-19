@@ -516,7 +516,8 @@ jDrupal.userRegister = function(name, pass, mail) {
     req.send(JSON.stringify({
       name: {value : name},
       pass: {value: pass},
-      mail: {value: mail}
+      mail: {value: mail},
+      preferred_langcode:{value:lang}
     }));
   });
 };
@@ -818,7 +819,8 @@ jDrupal.Entity.prototype.save = function() {
         if (isNew) {
           method = 'POST';
           resource = 'create';
-          path = 'entity/' + entityType;
+         // path = 'entity/' + entityType;
+          path = entityType;
         }
         else {
           method = 'PATCH';

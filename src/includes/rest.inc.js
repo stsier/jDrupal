@@ -212,7 +212,8 @@ jDrupal.userRegister = function(name, pass, mail) {
     req.send(JSON.stringify({
       name: {value : name},
       pass: {value: pass},
-      mail: {value: mail}
+      mail: {value: mail},
+      preferred_langcode:{value:lang}
     }));
   });
 };
